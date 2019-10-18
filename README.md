@@ -1,15 +1,9 @@
-# Starter for deploying [fast.ai](https://www.fast.ai) models on [Render](https://render.com)
+# Starter for deploying [fast.ai](https://www.fast.ai) models on [AWS Elastic Beanstalk](https://aws.amazon.com/cn/elasticbeanstalk/)
 
-This repo can be used as a starting point to deploy [fast.ai](https://github.com/fastai/fastai) models on Render.
+This repo can be used as a starting point to deploy [fast.ai](https://github.com/fastai/fastai) models on Elastic Beanstalk.
 
-The sample app described here is up at https://fastai-v3.onrender.com. Test it out with bear images!
+The project is based on [fasi.ai render-examples](https://github.com/render-examples/fastai-v3) and [Deploying on AWS BeanStalk](https://course.fast.ai/deployment_aws_beanstalk.html)
 
-You can test your changes locally by installing Docker and using the following command:
+Notice: In the tutorial they recommended to use t3.small server, but I found in many cases it didn't work. Switch it to t3.medium solve many unknown problems!
 
-```
-docker build -t fastai-v3 . && docker run --rm -it -p 5000:5000 fastai-v3
-```
-
-The guide for production deployment to Render is at https://course.fast.ai/deployment_render.html.
-
-Please use [Render's fast.ai forum thread](https://forums.fast.ai/t/deployment-platform-render/33953) for questions and support.
+The model link in `server.py` refer to a garbage classification, you can check the [notebook](https://www.kaggle.com/invisprints/garbage-classification-via-efficientnet-model) for more information!
